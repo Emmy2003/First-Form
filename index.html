@@ -1,67 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- FORM -->
     <form method="post">
+      <label for="First name:">First name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email:">email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="password:">password:</label>
+      <input type="password" id="password" name="password" required />
+
+      <input type="submit" value="Submit" />
+
+      <br /><br />
+      <!-- THIS IS FOR REGISTERING A USER, PLEASE FILL IN THE FORM AND CLICK SUBMIT -->
+      <h2>Registration Form</h2>
+
+      <form>
         <label for="First name:">First name:</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" name="name" readonly />
 
-        <label for="email:">email:</label>
-        <input type="email" id="email" name="email" required>
+        <label for="radio" name="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label>
 
-        <label for="password:">password:</label>
-        <input type="password" id="password" name="password" required>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+        <br /><br />
 
-        <input type="submit" value="Submit">
+        <label for="country">Country:</label>
+        <select name="country" id="country">
+          <option>Select an option</option>
+          <option value="usa">United States</option>
+          <option value="uk">United Kingdom</option>
+          <option value="canada">Canada</option>
+        </select>
+        <br /><br />
 
-        <br><br>
-        <!-- THIS IS FOR REGISTERING A USER, PLEASE FILL IN THE FORM AND CLICK SUBMIT -->
-        <h2>
-            Registration Form 
-        </h2>
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" rows="4" cols="30"></textarea>
+        <br /><br />
 
-        <form>
-            <label for="First name:">First name:</label>
-            <input type="text" name="name" readonly>
+        <input type="checkbox" id="newsletter" name="newsletter" />
+        <label for="newsletter">Subscribe to newsletter:</label>
+        <br /><br />
 
-            <label for="radio" name="gender">Gender:</label>
-            <input type="radio" id="male" name="gender" value="male">
-            <label for="male">Male</label>
-
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Female</label>
-            <br><br>
-
-            <label for="country">Country:</label>
-            <select name="country" id="country">
-                <option>Select an option</option>
-                <option value="usa">United States</option>
-                <option value="uk">United Kingdom</option>
-                <option value="canada">Canada</option>
-            </select>
-            <br><br>
-
-            <label for="message">Message:</label>
-            <textarea name="message" id="message" rows="4" cols="30"></textarea>
-            <br><br>
-
-            <input type="checkbox" id="newsletter" name="newsletter">
-            <label for="newsletter">Subscribe to newsletter:</label>
-            <br><br>
-
-            <input type="submit" value="Submit">
-
-        </form>
+        <input type="submit" value="Submit" />
+      </form>
     </form>
-
-</body>
-
+  </body>
 </html>
