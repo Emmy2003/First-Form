@@ -30,7 +30,7 @@
 
         <form>
             <label for="First name:">First name:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" name="name" readonly>
 
             <label for="radio" name="gender">Gender:</label>
             <input type="radio" id="male" name="gender" value="male">
@@ -47,6 +47,17 @@
                 <option value="uk">United Kingdom</option>
                 <option value="canada">Canada</option>
             </select>
+            <br><br>
+
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" rows="4" cols="30"></textarea>
+            <br><br>
+
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">Subscribe to newsletter:</label>
+            <br><br>
+
+            <input type="submit" value="Submit">
 
         </form>
     </form>
