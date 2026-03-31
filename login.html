@@ -5,56 +5,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
     <style>
         .login-container {
-            width: 300px;
-            margin: 100px auto;
-            padding: 20px;
-            border: 1px solid #ccc;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+        }
+
+        form{
+            width: 350px;
+            background-color: rgb(238, 233, 225);
+            padding: 20px 30px;
             border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
         }
-    
-        .login-container label {
-            display: block;
-            margin-bottom: 5px;
+
+        form h2{
+            text-align: center;
+            color: chocolate;
+            font-size: 2rem;
         }
-    
-        .login-container input[type="email"],
-        .login-container input[type="password"] {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-        }
-    
-        .login-container input[type="submit"] {
-            width: 100%;
-            padding: 10px;
-            background-color: #007BFF;
-            color: white;
+
+        form input{
+            padding: 10px 10px;
+            border-radius: 5px;
             border: none;
-            border-radius: 3px;
+        }
+
+        .submit-button{
+            background-color: chocolate;
+            color: white;
+            font-size: 1.2rem;
             cursor: pointer;
         }
-    
-        .login-container input[type="submit"]:hover {
-            background-color: #0056b3;
-        }
+
     </style>
   </head>
 
   <body>
     <div class="login-container">
         <form>
+            <h2>
+                Login 
+            </h2>
+
             <label for="email">Email:</label>
             <input type="email" name="email" required  placeholder="Enter a valid email"/>
+            <br>
 
             <label for="password">Password:</label>
-            <input type="password" name="password" required />
+            <input type="password" name="password" required placeholder="Enter password"/>
+            <br><br>
 
-            <input type="submit" value="Login" />
+            <input class="submit-button" type="submit" value="Login" />
         </form>
     </div>
   </body>
